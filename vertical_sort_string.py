@@ -16,7 +16,7 @@ def vertically_sort(input):
     max_length = max(len(word) for word in words)
     matrix = ["" for _ in range(max_length)]
 
-    for index in range(0, max_length):
+    for index in range(max_length):
         for word in words:
             if index >= len(word):
                 matrix[index] = matrix[index] + "$"
